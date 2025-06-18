@@ -26,9 +26,9 @@ Para el modelado de la solución, se identificaron las siguientes clases y relac
 * **`Dado`**: Representa un dado individual.
     * Atributos: `valorCaraSuperior` (int).
     * Métodos: `lanzar()` (simula el lanzamiento, retorna el valor), `getValorCaraSuperior()`.
-* **`Calculadora`**: Encargada de realizar operaciones aritméticas simples.
+* **`CalculadoraDados`**: Encargada de realizar operaciones aritméticas simples.
     * Métodos: `sumar(int a, int b)`.
-* **`JuegoDeDados`**: Orquesta el juego, lanzando los dados y determinando el resultado.
+* **`JuegoDados`**: Orquesta el juego, lanzando los dados y determinando el resultado.
     * Atributos: `dado1`, `dado2` (objetos de tipo `Dado`), `calculadora` (objeto de tipo `Calculadora`).
     * Métodos: `jugar()` (ejecuta la lógica del juego, devuelve el resultado).
 
@@ -62,17 +62,9 @@ Para poner en marcha este proyecto en tu entorno local:
 
 ## 📂 Contenido del Repositorio
 
-* **`src/`**: Contiene el código fuente de las clases Java (`Dado.java`, `Calculadora.java`, `JuegoDeDados.java`, `JuegoDeDadosTest.java`).
-* **`docs/`**: Carpeta para la documentación, incluyendo:
-    * `juego_dados_model.vpp`: El archivo del proyecto de Visual Paradigm.
-    * `diagrama_clases.png`: Imagen del diagrama de clases UML.
-    * `codigo_autogenerado_vp.png`: Imagen del código autogenerado por Visual Paradigm en IntelliJ.
+* **`src/`**: Contiene el código fuente de las clases Java (`Dado.java`, `CalculadoraDados.java`, `JuegoDados.java`, `JuegoDadosTest.java`).
+* **`docs/`**: Carpeta para la documentación
 * **`README.md`**: Este archivo.
-
----
-
-[Incluir aquí una **imagen del Código Auto Generado con VP** en IntelliJ (.png o .jpeg)]
-*(Ejemplo: `![Código Autogenerado VP](docs/codigo_autogenerado_vp.png)`)*
 
 ---
 
@@ -82,7 +74,7 @@ Para poner en marcha este proyecto en tu entorno local:
 * **Modelado UML:** Visual Paradigm
 * **IDE:** IntelliJ IDEA
 * **Control de Versiones:** Git / GitHub
-* **Pruebas Unitarias:** JUnit (opcional, pero buena práctica)
+* **Pruebas Unitarias:** JUnit
 
 ## 🤝 Contribuciones
 
